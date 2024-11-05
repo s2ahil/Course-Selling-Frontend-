@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+#GoBackButton {
+    transition: .2s;
+    cursor: pointer;
+  }
+  
+  #GoBackButton:hover {
+    color: black;
+    transform: translate(-0.5rem, -0.5rem);
+    background: #ff90e8;
+    box-shadow: 0.25rem 0.25rem #000;
+  }
+  
+  /* when button pressed */
+  #GoBackButton:active{
+      transform:translate(0) ;
+      box-shadow: none;
+  }
+  
+  .underline_higlight{
+      background-image: url(/public/svg/underline.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right bottom 1%;
+  }
+  
+  
+  
+  
+  .highlight{
+      background-image: url(/public/svg/yellow_highlight.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      white-space: nowrap;
+  }
