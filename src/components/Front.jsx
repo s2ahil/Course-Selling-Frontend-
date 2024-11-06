@@ -13,9 +13,9 @@ const Front = () => {
 
   ]
   return (
-    <div>
+    <div className='bg-[#E5E7EB] min-h-screen flex flex-col justify-between'>
 
-      <div className='bg-[#E5E7EB] h-[30rem] '>
+      <div className=''>
 
 
         <div className='md:ml-5 p-5 text-3xl  text-center sm:text-left  text-[#374151]'>Learn From Our Free Courses</div>
@@ -26,29 +26,21 @@ const Front = () => {
         <div className='md:ml-5 p-5 text-xl  text-center sm:text-left underline  decoration-sky-500 	'>Never stop Learning </div>
 
         <div className='text-center md:text-left md:ml-5 p-5 m-5'>
-          <Link  to="/login" className='bg-blue-400 p-3 rounded-xl text-[#ffff]  font-bold transition-transform transform hover:-translate-y-1 hover:shadow-2xl'>Get Started</Link>
+          <Link to="/login" className='bg-blue-400 p-3 rounded-xl text-[#ffff]  font-bold transition-transform transform hover:-translate-y-1 hover:shadow-2xl'>Get Started</Link>
         </div>
 
+
+       
+
+    
+      </div>
+
+  
+      <div className="text-center p-2 bg-[#E5E7EB]">
+        <div>© 2024 Copyright: Dev</div>
       </div>
 
 
-      {/* <div className='flex   h-[15rem] p-5   justify-center  '>
-
-        <div className='flex gap-1  items-center w-[50rem] 	'>
-
-          {MiddleSectionImage.map((item) => (
-            <MiddleSection imgsrc={item.image} alt={item.alt} key={item.alt}></MiddleSection>
-
-          ))
-
-          }
-
-
-        </div>
-      </div> */}
-      <div className=' flex max-w-full h-full p-5 bg-[#E5E7EB] justify-center items-center'>
-        <div className=''>© 2024 Copyright: Dev</div>
-      </div>
     </div>
   )
 }
